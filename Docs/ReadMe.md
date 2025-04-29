@@ -205,20 +205,22 @@ def DH_Params_H_Matrix(i,j,q1=0,q2=0,q3=0,q4=0,q5=0,q6=0):
 ### Rotation Matrix
 
 ```python
-def get_Joint_Variables(finalX,finalY,finalZ,roll,pitch,yaw):
-    R0_6_initial=np.matrix([
-        [0,0,1],
-        [0,-1,0],
-        [1,0,0]
+def get_Joint_Variables(finalX, finalY, finalZ, roll, pitch, yaw):
+    R0_6_initial = np.array([
+        [0, 0, 1],
+        [0, -1, 0],
+        [1, 0, 0]
     ])
-    R_6_rotation=np.matrix([
-        [np.cos(pitch)*np.cos(roll),np.sin(pitch)*np.sin(yaw)-np.sin(roll)*np.cos(pitch)*np.cos(yaw),np.sin(pitch)*np.cos(yaw)+np.sin(roll)*np.sin(yaw)*np.cos(pitch)],
-        [np.sin(roll),np.cos(roll)*np.cos(yaw),-np.sin(yaw)*np.cos(roll)],
-        [-np.sin(pitch)*np.cos(roll),np.sin(pitch)*np.sin(roll)*np.cos(yaw)+np.sin(yaw)*np.cos(pitch),-np.sin(pitch)*np.sin(roll)*np.sin(yaw)+np.cos(pitch)*np.cos(yaw)]
+
+    R_6_rotation = np.array([
+        [np.cos(pitch)*np.cos(roll), np.sin(pitch)*np.sin(yaw)-np.sin(roll)*np.cos(pitch)*np.cos(yaw), np.sin(pitch)*np.cos(yaw)+np.sin(roll)*np.sin(yaw)*np.cos(pitch)],
+        [np.sin(roll),               np.cos(roll)*np.cos(yaw),                                         -np.sin(yaw)*np.cos(roll)],
+        [-np.sin(pitch)*np.cos(roll),np.sin(pitch)*np.sin(roll)*np.cos(yaw)+np.sin(yaw)*np.cos(pitch), -np.sin(pitch)*np.sin(roll)*np.sin(yaw)+np.cos(pitch)*np.cos(yaw)]
     ])
-    
-    R0_6=np.dot(R0_6_initial,R_6_rotation)
+
+    R0_6 = np.dot(R0_6_initial, R_6_rotation)
     print(R0_6)
+
 ```
 
 ## Photo Gallery
@@ -228,7 +230,7 @@ def get_Joint_Variables(finalX,finalY,finalZ,roll,pitch,yaw):
 
 - Robotic Dog(Model):
   
-  ![Video of the moving 6DOFRobotic arm](../Image/Video.mp4)
+  ![Solidworks design of the 6DOFRobotic arm](../Image/Solidworks%20design.png)
 - Robotic Dog(Actual Bot):
   ![3D Printed Robotic arm](../Image/3D%20printed%20robotic%20arm.jpg)
 
