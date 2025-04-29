@@ -226,13 +226,13 @@ def get_Joint_Variables(finalX, finalY, finalZ, roll, pitch, yaw):
 ## Photo Gallery
 
 - Manipulator Diagram:
-  ![Manipulator diagram (2)](../Image/Manipulater%20diagram.jpeg)
+  ![Manipulator diagram (2)](./Image/Manipulater%20diagram.jpeg)
 
 - Robotic Dog(Model):
   
-  ![Solidworks design of the 6DOFRobotic arm](../Image/Solidworks%20design.png)
+  ![Solidworks design of the 6DOFRobotic arm](./Image/Solidworks%20design.png)
 - Robotic Dog(Actual Bot):
-  ![3D Printed Robotic arm](../Image/3D%20printed%20robotic%20arm.jpg)
+  ![3D Printed Robotic arm](./Image/3D%20printed%20robotic%20arm.jpg)
 
 
 
