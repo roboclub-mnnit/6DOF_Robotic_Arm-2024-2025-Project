@@ -39,7 +39,7 @@ This project demonstrates the design and development of a 6DOF robotic manipulat
   - `kinematics/`
     - `Inverse Kinematics.py`: Script to compute six joint angles of the robotic arm.
   - `simulation/`
-    - `4 Legs Simulation.py`: 3D simulation of all joint of the Robotic arm.
+    - `Simulation.py`: 3D simulation of all joint of the Robotic arm.
     
 
 - `Solidworks File/`
