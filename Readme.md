@@ -231,7 +231,7 @@ def get_Joint_Variables(finalX, finalY, finalZ, roll, pitch, yaw):
 - Robotic Arm(Model):
   
   ![Solidworks design of the 6DOFRobotic arm](./Image/Solidworks%20design.png)
-- Robotic Dog(Actual Bot):
+- Robotic Arm(Actual Bot):
   ![3D Printed Robotic arm](./Image/3D%20printed%20robotic%20arm.jpg)
 
 
